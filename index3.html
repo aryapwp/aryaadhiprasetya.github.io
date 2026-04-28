@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Virtual Assistant & Social Media Manager</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+    <nav class="fixed w-full bg-white/80 backdrop-blur-md z-50 border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0 font-bold text-xl tracking-tight text-indigo-600">
+                    Portfolio.
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-slate-600 hover:text-indigo-600 transition">Home</a>
+                    <a href="#about" class="text-slate-600 hover:text-indigo-600 transition">About Me</a>
+                    <a href="#services" class="text-slate-600 hover:text-indigo-600 transition">Services</a>
+                    <a href="#projects" class="text-slate-600 hover:text-indigo-600 transition">Projects</a>
+                    <div class="flex bg-slate-100 p-1 rounded-full border border-slate-200">
+                        <button onclick="setLanguage('en')" id="btn-en" class="px-3 py-1 rounded-full text-xs font-bold transition bg-indigo-600 text-white shadow-sm">EN</button>
+                        <button onclick="setLanguage('id')" id="btn-id" class="px-3 py-1 rounded-full text-xs font-bold transition text-slate-500 hover:text-indigo-600">ID</button>
+                    </div>
+                </div>
+                <div class="hidden md:flex">
+                    <a href="#contact" class="bg-indigo-600 text-white px-5 py-2 rounded-full font-medium hover:bg-indigo-700 transition shadow-sm">
+                        Contact Me
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="pt-32 pb-20 md:pt-40 md:pb-28">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-indigo-600 font-semibold tracking-wide uppercase text-sm mb-3">Your Digital Solution</h2>
+            <h1 class="text-4xl md:text-6xl font-bold text-slate-900 mb-6 leading-tight">
+                Virtual Assistant <br> 
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-600">
+                    Specializing in Social Media
+                </span>
+            </h1>
+            <p class="mt-4 text-lg text-slate-600 max-w-2xl mx-auto mb-10">
+                Helping you boost productivity and online presence through structured administrative support and effective social media management.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#services" class="bg-indigo-600 text-white px-8 py-3 rounded-full font-medium hover:bg-indigo-700 transition shadow-lg hover:shadow-xl">
+                    View Services
+                </a>
+                <a href="#projects" class="bg-white text-slate-700 border border-slate-300 px-8 py-3 rounded-full font-medium hover:bg-slate-50 transition shadow-sm">
+                    View Portfolio
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="w-full md:w-1/2">
+                    <img src="images/Arya.jpg" alt="Working on a laptop" class="rounded-2xl shadow-xl object-cover h-[400px] w-full">
+                </div>
+                <div class="w-full md:w-1/2">
+                    <h2 class="text-3xl font-bold text-slate-900 mb-6">A Unique Background for Better Solutions</h2>
+                    <p class="text-slate-600 mb-4 leading-relaxed">
+                        My approach as a Virtual Assistant is shaped by a diverse career journey. As an experienced <strong>Software Engineer</strong> who builds web and mobile applications, I am accustomed to strong logical thinking, analytical problem-solving, and a high attention to detail in system administration.
+                    </p>
+                    <p class="text-slate-600 mb-6 leading-relaxed">
+                        Furthermore, I have dedicated <strong>over 4 years as a teacher and instructor</strong>. My experience in managing classrooms and designing curricula has elevated my communication skills, patience, and time management to the highest level. This blend of technical and educational expertise enables me to execute administrative tasks and social media content strategies with precision, planning, and creativity.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="border-l-4 border-indigo-500 pl-4">
+                            <h4 class="font-bold text-slate-900 text-xl">4+ Years</h4>
+                            <p class="text-sm text-slate-500">Teaching Experience</p>
+                        </div>
+                        <div class="border-l-4 border-purple-500 pl-4">
+                            <h4 class="font-bold text-slate-900 text-xl">100%</h4>
+                            <p class="text-sm text-slate-500">Commitment to Detail</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-20 bg-slate-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold text-slate-900 mb-4">Core Services</h2>
+                <p class="text-slate-600">Professional support to lighten your workload so you can focus on growing your business.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Administrative Assistant</h3>
+                    <p class="text-slate-600 mb-4">
+                        Taking over time-consuming administrative tasks. Backed by my engineering background, I ensure all data is neatly and systematically organized.
+                    </p>
+                    <ul class="space-y-2 text-slate-600">
+                        <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-indigo-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Email & Calendar Management</li>
+                        <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-indigo-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Data Entry & Digital Filing</li>
+                        <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-indigo-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Market & Competitor Research</li>
+                        <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-indigo-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Short-term Project Management</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-purple-100 text-purple-600 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Social Media Management</h3>
+                    <p class="text-slate-600 mb-4">
+                        Building brand awareness consistently. Leveraging my copywriting and content marketing experience to engage audiences across different languages.
+                    </p>
+                    <ul class="space-y-2 text-slate-600">
+                        <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-purple-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Bilingual Copywriting & Content Creation</li>
+                        <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-purple-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Post Scheduling & Community Management</li>
+                        <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-purple-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Visual Asset Creation & Basic Design</li>
+                        <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-purple-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Analytics & Performance Reporting</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold text-slate-900 mb-4">Project Samples</h2>
+                <p class="text-slate-600">A glimpse into my past work, collaborations, and track record.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-slate-50 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition group border border-slate-100">
+                    <div class="h-48 bg-slate-200 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Social Media" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-sm font-semibold text-purple-600 mb-1">Social Media Management</h4>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Blogging & Content Strategy</h3>
+                        <p class="text-slate-600 text-sm">Managed social media accounts integrated with a blog, utilizing English for content marketing to effectively reach an international audience.</p>
+                    </div>
+                </div>
+
+                <div class="bg-slate-50 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition group border border-slate-100">
+                    <div class="h-48 bg-slate-200 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Data Administration" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-sm font-semibold text-indigo-600 mb-1">Administrative Growth</h4>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Large-Scale Project Management</h3>
+                        <p class="text-slate-600 text-sm">Facilitated team collaboration and strict timeline management to accomplish application deployments and corporate administrative goals in a short timeframe.</p>
+                    </div>
+                </div>
+
+                <div class="bg-slate-50 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition group border border-slate-100">
+                    <div class="h-48 bg-slate-200 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Web Dev" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-sm font-semibold text-teal-600 mb-1">Software & Education</h4>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Digital Module Creation</h3>
+                        <p class="text-slate-600 text-sm">Structured learning materials, programming logic, and application workflows (including e-commerce and music landing pages) for educational purposes and clients.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-slate-900 text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold mb-6">Ready to Work Together?</h2>
+            <p class="text-slate-300 mb-10 max-w-2xl mx-auto">
+                Whether you need help streamlining a packed schedule or boosting your social media engagement, let's discuss how I can help.
+            </p>
+            
+            <div class="bg-slate-800 p-8 rounded-2xl shadow-lg border border-slate-700 max-w-xl mx-auto">
+                <form class="space-y-4 text-left">
+                    <div>
+                        <label class="block text-sm font-medium text-slate-300 mb-1">Full Name</label>
+                        <input type="text" class="w-full px-4 py-2 bg-slate-900 border border-slate-700 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none text-white placeholder-slate-500" placeholder="Enter your name">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-slate-300 mb-1">Email Address</label>
+                        <input type="email" class="w-full px-4 py-2 bg-slate-900 border border-slate-700 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none text-white placeholder-slate-500" placeholder="name@email.com">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-slate-300 mb-1">Message / Service Needed</label>
+                        <textarea rows="4" class="w-full px-4 py-2 bg-slate-900 border border-slate-700 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none text-white placeholder-slate-500" placeholder="Tell me how I can help you..."></textarea>
+                    </div>
+                    <button type="button" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-4 rounded-lg transition duration-200">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-950 py-8 text-center border-t border-slate-800">
+        <p class="text-slate-500 text-sm">
+            &copy; 2026 Virtual Assistant Portfolio. All rights reserved.
+        </p>
+    </footer>
+    <script>
+        function setLanguage(lang) {
+            // Update all elements with the 'translate' class and 'nav-link'
+            const elements = document.querySelectorAll('.translate, .nav-link');
+            elements.forEach(el => {
+                el.innerText = el.getAttribute(`data-${lang}`);
+            });
+
+            // Update button styles
+            const btnEn = document.getElementById('btn-en');
+            const btnId = document.getElementById('btn-id');
+
+            if (lang === 'en') {
+                btnEn.classList.add('bg-indigo-600', 'text-white', 'shadow-sm');
+                btnEn.classList.remove('text-slate-500');
+                btnId.classList.remove('bg-indigo-600', 'text-white', 'shadow-sm');
+                btnId.classList.add('text-slate-500');
+                document.documentElement.lang = "en";
+            } else {
+                btnId.classList.add('bg-indigo-600', 'text-white', 'shadow-sm');
+                btnId.classList.remove('text-slate-500');
+                btnEn.classList.remove('bg-indigo-600', 'text-white', 'shadow-sm');
+                btnEn.classList.add('text-slate-500');
+                document.documentElement.lang = "id";
+            }
+        }
+    </script>
+</body>
+</html>
